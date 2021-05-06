@@ -1,0 +1,13 @@
+<h1>{{title}}</h1>
+
+
+<ul>
+  <li *ngFor='let x of my_obj| keyvalue'>
+    <button (click)="ShowPost(x.key)">{{x.value.titolo}}</button>
+    <button (click) = 'DeletePost(x.key)'>Cancella</button>
+  </li>
+</ul>
+
+<app-notifica [selezioneC]="selezione"> </app-notifica>
+
+<app-new-post (newPostEvent)="addPost($event)"> </app-new-post>

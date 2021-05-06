@@ -1,0 +1,7 @@
+<p>Titolo:</p>
+<input #nuovoTitolo/>
+<br>
+<p>Testo:</p>
+<input #nuovoCorpo/>
+<br/><br/>
+<button (click)="newPost(nuovoTitolo.value, nuovoCorpo.value);nuovoTitolo.value='';nuovoCorpo.value=''">SALVA</button>
